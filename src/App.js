@@ -3,6 +3,10 @@ import { WonderPush } from 'react-wonderpush';
   import SwitchButton from './SwitchButton'
   import withWonderPush from './withWonderPush';
 
+  WonderPush.push(function() {
+    WonderPush.getUserId().then(console.log);
+  });
+
 function App() {
 
   // withWonderPush(SwitchButton);
