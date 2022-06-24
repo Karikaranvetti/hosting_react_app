@@ -3,16 +3,19 @@ import { WonderPush } from 'react-wonderpush';
   import SwitchButton from './SwitchButton'
   import withWonderPush from './withWonderPush';
 
-  WonderPush.push(function() {
-    WonderPush.getUserId().then(console.log);
-  });
-
+ 
 function App() {
 
   // withWonderPush(SwitchButton);
   return (
    // Wrap your app with our WonderPush component
-   <WonderPush options = {{webKey: "eb6fafdce2dc916c828bd68ae984fa7b5d5e0826ac8ba33c420a5bc68bd08c89"}}>
+   <WonderPush options = {{webKey: "eb6fafdce2dc916c828bd68ae984fa7b5d5e0826ac8ba33c420a5bc68bd08c89",subscriptionDialog: {
+    triggers: {},
+    title: "Would you like to subscribe to push notifications?",
+    message: "You can always unsubscribe at any time.",
+    positiveButton: "Subscribe",
+    negativeButton: "Later",
+  },}}>
   
    <div className="App">
      <h1>here my componet</h1>
