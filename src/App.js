@@ -9,6 +9,8 @@ function App() {
   
    <div className="App">
      <h1>here my componet</h1>
+     <a href="#" onclick="WonderPush.subscribeToNotifications(event); return false;">Click me to subscribe</a>
+
    </div>
    <SwitchButton/>
  </WonderPush>
