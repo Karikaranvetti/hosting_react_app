@@ -17,7 +17,7 @@ function App() {
 
    </div>
    <SwitchButton/>
-   <EventToTrack/>
+   {/* <EventToTrack/> */}
  </WonderPush>
   );
 }         
